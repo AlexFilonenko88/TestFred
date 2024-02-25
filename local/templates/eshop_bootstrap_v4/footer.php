@@ -128,7 +128,20 @@
 								array('HIDE_ICONS' => 'Y')
 							);?>
 						</div>
-						<div id="bx-composite-banner" style="padding-top: 20px"></div>
+						<div id="bx-composite-banner" style="padding-top: 20px; color: white">
+							<?$APPLICATION->IncludeComponent(
+								"bitrix:main.include", 
+								"footer", 
+								array(
+									"AREA_FILE_SHOW" => "sect",
+									"AREA_FILE_SUFFIX" => "inc_footer",
+									"EDIT_TEMPLATE" => "",
+									"COMPONENT_TEMPLATE" => "footer",
+									"AREA_FILE_RECURSIVE" => "Y"
+								),
+								false
+							);?>
+						</div>
 					</div>
 					<div class="col-sm-6 col-lg-3 order-lg-1 order-4">
 						<div class="mb-3">

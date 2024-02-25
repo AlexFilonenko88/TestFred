@@ -113,6 +113,16 @@ $curPage = $APPLICATION->GetCurPage(true);
 								</div>
 							</div>
 						</div>
+						<?$APPLICATION->IncludeComponent(
+							"bitrix:main.include",
+							"header",
+							Array(
+								"AREA_FILE_RECURSIVE" => "Y",
+								"AREA_FILE_SHOW" => "sect",
+								"AREA_FILE_SUFFIX" => "inc_header",
+								"EDIT_TEMPLATE" => ""
+							)
+						);?>
 					</div>
 				</div>
 			</div>
